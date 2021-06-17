@@ -6,10 +6,14 @@ const options = {
     zoomControl: false,
 }
 
-const map = L.map('mapid').setView([-27.209325,-49.6448719], 15)
-//const map = L.map('mapid').setView([-27.2109325,-49.6448719], 15);
+// mudei o const map : 
+// const map = L.map('mapid',options).setView([-27.209325,-49.6448719], 15)
 
-//const map = L.map('mapid', options).setView([-27.2109325,-49.6448719], 15);
+const map = L.map('mapid',options).setView([-27.209325,-49.6448719], 15);
+
+// const map = L.map('mapid').setView([-27.2109325,-49.6448719], 15);
+
+// const map = L.map('mapid', options).setView([-27.2109325,-49.6448719], 15);
 
 //create and add tileLayer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',)
