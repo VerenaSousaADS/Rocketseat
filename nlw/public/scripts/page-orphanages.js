@@ -6,7 +6,7 @@
 //Boolean true or false
 //Array []
 
-const map = L.map('mapid').setView([-27.2109325, -49.6448719], 15);
+const map = L.map("mapid").setView([-27.2109325, -49.6448719], 15);
 
 //create and add tileLayer
 
@@ -29,7 +29,7 @@ const popup = L.popup({
     className: "map-popup",
     minWidth: 240,
     minHeight: 240
-}).setContent('Lar das meninas <a href="orphanage.hmtl?id=1" class="choose-orphanage"> <img src="./public/images/arrow-white.svg"></a>')
+}).setContent('Lar das meninas <a href="./orphanage.html" class="choose-orphanage"> <img src="./public/images/arrow-white.svg"></a>')
 
 //create and add marker
 
