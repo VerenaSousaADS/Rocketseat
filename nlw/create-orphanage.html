@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./public/CSS/main.css" />
     <link rel="stylesheet" href="./public/CSS/animations.css" />
     <link rel="stylesheet" href="./public/CSS/sidebar.css" />
+    <link rel="stylesheet" href="./public/CSS/map.css" />
     <link rel="stylesheet" href="./public/CSS/page-create-orphanage.css" />
 
     
@@ -33,7 +34,7 @@
   </head>
 
   <body>
-    <div id="create-orphanage">
+    <div id="page-create-orphanage">
 
       <aside class="animate-right sidebar">
         <img src="./public/images/map-marker.svg" alt="Happy">
@@ -45,7 +46,33 @@
       </aside>
 
       <main class="animate-appear with-sidebar">
-    
+        <form action="">
+          <fieldset>
+            <legend>Dados</legend>
+
+            <div class="map-container">
+              <div id="mapid">
+
+              </div>
+
+              <footer>
+                <a href="#" id="select-point">
+                  Clique no mapa para adicionar a localização
+                </a>
+              </footer>
+            </div>
+
+            <div class="input-block">
+              <label for="name">Nome</label>
+              <input id="name" name="name">
+            </div>
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Visitação</legend>
+          </fieldset>
+        </form>
       </main>
     </div>
 
