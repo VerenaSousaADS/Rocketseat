@@ -2,6 +2,7 @@
 
 const express = require('express');
 const path = require('path');
+const pages = require('./pages.js');
 
 
 //iniciando o express
@@ -14,15 +15,15 @@ server
 
     //configurar template engine
 
-    .set('views', path.join(__dirname, "view"))
+    .set('views', path.join(__dirname, "views"))
     .set('view engine', 'hbs')
 
-    // criar uma rota 
+    // rotas da aplicação 
 
-    .get('/', (request, response) => {
-        return response.render('index')
-
-    })
+    .get('/', pages.index)
+    .get('/orphanage', pages.orphanage)
+    .get('/orphanages', pages.orphanages)
+    .get('/create-orphanage', pages.createOrphanage)
 
 //ligar o servidor 
 
