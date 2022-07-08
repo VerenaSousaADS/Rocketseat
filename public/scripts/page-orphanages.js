@@ -24,7 +24,7 @@ const icon = L.icon({
     popAnchor: [170, 2]
 })
 
-function addMaker({id, name, lat, lng}) {
+function addMaker({id, name, lat, lng} = orphanage) {
     //create popup overlay
 
     const popup = L.popup({
